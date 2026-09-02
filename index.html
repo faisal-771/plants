@@ -1,0 +1,21 @@
+<div class="badge">
+  <div class="row"><span>آخر ريّة:</span><b style="color:var(--c)" id="v-water">-</b></div>
+  <div class="alert" id="v-alert">-</div>
+</div>
+
+<div class="list">
+  <div class="item row"><span style="color:#94a3b8">التربة</span><b id="v-soil">-</b></div>
+  <div class="item row"><span style="color:#94a3b8">تاريخ الشراء</span><b id="v-date">-</b></div>
+  <div class="item row"><span style="color:#94a3b8">السعر</span><b id="v-price">-</b></div>
+</div>
+
+<button class="btn-main" onclick="water()">سقيتها اليوم 💧</button>
+<button class="btn-link" onclick="form.style.display = form.style.display==='grid'?'none':'grid'">تعديل البيانات</button>
+
+<form id="f" onsubmit="save(event)">
+  <input id="in-name" placeholder="اسم النبتة" required>
+  <input id="in-soil" placeholder="نوع التربة">
+  <input id="in-date" type="date">
+  <input id="in-price" placeholder="السعر">
+  <button class="btn-main" style="background:var(--b); color:#fff">حفظ</button>
+</form>
